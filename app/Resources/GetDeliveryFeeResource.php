@@ -9,7 +9,7 @@ final class GetDeliveryFeeResource extends JsonResource
     public function toArray($request): array
     {
         return [
-            'fee' => $this->resource['fee'] ?? 0,
+            'fee' => number_format($this->resource['fee'] ?? 0, 2, '.', ''),
         ];
     }
 }

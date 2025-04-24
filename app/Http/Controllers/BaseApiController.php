@@ -7,7 +7,7 @@ use App\Exceptions\BaseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
 
-class BaseApiController
+abstract class BaseApiController
 {
     public function response(
         string $message = 'Success!',
